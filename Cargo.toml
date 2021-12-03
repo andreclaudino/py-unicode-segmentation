@@ -1,0 +1,15 @@
+[package]
+name = "py-unicode-segmentation"
+authors = ["André CLaudino <claudino@d2x.com.br>"]
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "py_unicode_segmentation"
+crate-type = ["cdylib"]
+
+[dependencies]
+unicode-segmentation = "1.8.0"
+cpython = { version = "0.7",  features = ["extension-module"] }
